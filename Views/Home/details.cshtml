@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<section class="details-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div>
+                    @switch (Model)
+                    {
+                        case 1:
+                            @Html.Partial("_Aquarius")
+                            break;
+                        case 2:
+                            @Html.Partial("_Aries")
+                            break;
+                        case 3:
+                            @Html.Partial("_Cancer")
+                            break;
+                        case 4:
+                            @Html.Partial("_Capricorn")
+                            break;
+                        case 5:
+                            @Html.Partial("_Gemini")
+                            break;
+                        case 6:
+                            @Html.Partial("_Leo")
+                            break;
+                        case 7:
+                            @Html.Partial("_Libra")
+                            break;
+                        case 8:
+                            @Html.Partial("_Pisces")
+                            break;
+                        case 9:
+                            @Html.Partial("_Sagittarius")
+                            break;
+                        case 10:
+                            @Html.Partial("_Scorpio")
+                            break;
+                        case 11:
+                            @Html.Partial("_Taurus")
+                            break;
+                        case 12:
+                            @Html.Partial("_virgo")
+                            break;
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
