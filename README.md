@@ -1,11 +1,216 @@
 # RuthlessIWI.github.io
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Pages Site</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
-  </body>
-</html>
+@{
+    ViewData["Title"] = "Home";
+}
+<section class="hero-section">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+                <h1 class="text-white">
+                    Read Your Daily <br />
+                    Horoscope Today
+                </h1>
+                <p class="text-white mt-4">
+                   Through the simplified language of the planets and zodiac signs, astrology states complex notions about personality, life cycles, and relationship patterns. Astrology provides comfort to those in distress by helping them imagine a better future through those set of patterns
+                </p>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12">
+                <img src="~/images/Zodiac-sign.png" alt="" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-section">
+    <div class="container">
+        <h2 class="text-center mb-5 text-white">Horoscope Forecasts</h2>
+       
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href="@Url.Action("Details", new { horoScope = 1 })">
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/aquarius.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Aquarius</h4>
+                            <p class="text-white">Jan 20- Feb 18</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 2 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Aries.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Aries</h4>
+                            <p class="text-white">Mar 21- Apr 19</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 3 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Cancer.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Cancer</h4>
+                            <p class="text-white">Jun 21- Jul 22</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 4 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Capricorn.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Capricorn</h4>
+                            <p class="text-white">Dec 22- Jan 19</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 5 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Gemini.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Gemini</h4>
+                            <p class="text-white">May 21- Jun 20</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 6 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Leo.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Leo</h4>
+                            <p class="text-white">Jul 23- Aug 22</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 7 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Libra.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Libra</h4>
+                            <p class="text-white">Sep 23- Oct 22</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 8 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Pisces.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Pisces</h4>
+                            <p class="text-white">Feb 19- Mar 20</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" onclick="location.href='@Url.Action("Details", new { horoScope = 9 })'">
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Sag.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Sag</h4>
+                            <p class="text-white">Nov 22- Dec 21</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 10 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Scorpio.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Scorpio</h4>
+                            <p class="text-white">Oct 23- Nov 21</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 11 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Taurus.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Taurus</h4>
+                            <p class="text-white">Apr 20- May 20</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <a class="d-block" href='@Url.Action("Details", new { horoScope = 12 })'>
+                    <div class="card rounded-0 text-center mb-4">
+                        <div class="card-body">
+                            <div class="icon mx-auto">
+                                <img src="~/images/Virgo.svg" class="img-fluid" alt="" width="100" />
+                            </div>
+                            <h4 class="mt-3 text-white">Virgo</h4>
+                            <p class="text-white">Aug 23- Sep 22</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card rounded-0 bg-transparent">
+                    <div class="card-body py-4 text-white">
+                        •	People in Japan consider blood types like horoscopes and think that blood types are related to personality types.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card rounded-0 bg-transparent">
+                    <div class="card-body py-4 text-white">
+                        •	Scorpio is the most common zodiac sign in the United States (9.6% of the population), while Aquarius is the least common (6.3 percent).
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card rounded-0 bg-transparent">
+                    <div class="card-body py-4 text-white">
+                        •	The earliest evidence of zodiac use dates to the Babylonians.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
